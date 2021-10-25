@@ -22,7 +22,7 @@
 
 		<header>
 			<div class="logo">
-				<a href="./enter.html"><img src="./img/logo_www.svg" alt="" /></a>
+				<a href="./enter.html"><img src="./img/logo_bbb.svg" alt="" /></a>
 			</div>
 
 			<div class="menu">
@@ -41,7 +41,7 @@
 		<div class="wrap_menu">
 			<header>
 				<div class="logo">
-					<a href="./enter.html"><img src="./img/logo_www.svg" alt="" /></a>
+					<a href="./enter.html"><img src="./img/logo_bbb.svg" alt="" /></a>
 				</div>
 				<button id="exit_button">
 					<div class="text">
@@ -296,12 +296,57 @@
 			</div>
 		</div>
 
+		<div class="bottom_wrap">
+			<div class="line02"></div>
+			<div class="line02_2"></div>
+			<div class="line03"></div>
+			<div class="line03_2"></div>
+			<div class="text">
+				柴犬<br>
+				外觀標準
+			</div>
+			<div class="img">
+				<img src="./img/bottom_wrap_shiba.png" alt="">
+				<div class="img_img01">
+					<img src="./img/bottom_look01.jpg" alt="">
+				</div>
+				<div class="img_img02">
+
+				</div>
+				<div class="img_img03">
+
+				</div>
+				<div id="img_text01" class="img_text">
+					<h3>
+						耳朵/眉毛
+					</h3>
+					<p>柴犬的耳朵是豎起來的，眉毛非常明顯，呈現橢圓形狀，非常可愛。 </p>
+				</div>
+
+				<div id="img_text02" class="img_text">
+					<h3>
+						毛髮
+					</h3>
+					<p>柴犬有著雙層被毛，底層的毛髮輕且柔軟，保持柴犬的體溫平衡，而外層較長的的毛髮則避免直接與陽光的曝曬。</p>
+				</div>
+
+				<div id="img_text03" class="img_text">
+					<h3>
+						尾巴型狀
+					</h3>
+					<p>尾巴是柴犬保持平衡的一個重要部分，柴犬作為獵犬，尾巴判定的要求就是：捲曲的或者直刀式尾巴要粗且有力，尾尖指向頸部指向上方也可以。
+					</p>
+				</div>
+			</div>
+		</div>
 
 		<!-- footer -->
 		<div class="footer">
 			<div class="footer_inner">
 				<div class="arrow">
-					<i class="far fa-arrow-alt-circle-up"></i>
+					<a href="#">
+						<i class="far fa-arrow-alt-circle-up"></i>
+					</a>
 				</div>
 				<div class="body">
 					<div class="left">
@@ -435,6 +480,17 @@
 		}, function () {
 			$("#55").css("background-color", "#131313");
 		})
+
+		$(".arrow").click(function (e) {
+			e.preventDefault();
+			$("html,body").animate(
+				{
+					scrollTop: 0,
+				},
+				600
+			);
+		});
+
 	});
 </script>
 

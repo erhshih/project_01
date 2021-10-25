@@ -23,14 +23,15 @@ body {
 /* header */
 header {
   display: flex;
-  height: 85px;
+  height: 58px;
   /* border: 2px #000 solid; */
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 1440px;
   margin: 0 auto;
   z-index: 10;
   position: fixed;
-  top: 7px;
+  /* top: 7px; */
+  top: -1px;
 }
 .logo {
   /* border: 2px rgb(252, 26, 26) solid; */
@@ -38,8 +39,8 @@ header {
   height: 100%;
 }
 .logo img {
-  width: 85px;
-  height: 85px;
+  width: 55px;
+  height: 55px;
   margin-left: 30px;
 }
 
@@ -604,14 +605,19 @@ header {
   background-color: #121212;
   position: relative;
 }
-
+.arrow a {
+  position: relative;
+  top: 40px;
+  left: 1290px;
+}
 .arrow {
   /* border: rgb(255, 0, 0) solid 1px; */
 }
 
 .far {
-  margin-top: 7%;
-  margin-left: 90%;
+  /* margin-top: 7%;
+  margin-left: 90%; */
+
   font-size: 50px;
   color: rgb(255, 255, 255);
   font-weight: 100;

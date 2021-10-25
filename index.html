@@ -297,9 +297,13 @@
       <!-- footer -->
       <div class="footer">
         <div class="footer_inner">
+
           <div class="arrow">
-            <i class="far fa-arrow-alt-circle-up"></i>
+            <a href="#">
+              <i class="far fa-arrow-alt-circle-up"></i>
+            </a>
           </div>
+
           <div class="body">
             <div class="left">
               <div class="top">
@@ -372,7 +376,7 @@
       <div class="wrap_menu">
         <header>
           <div class="logo">
-            <a href="./enter.html"><img src="./img/logo_www.svg" alt="" /></a>
+            <a href="./enter.html"><img src="./img/logo_bbb.svg" alt="" /></a>
           </div>
           <button id="exit_button">
             <div class="text">
@@ -520,6 +524,16 @@
     }, function () {
       $("#55").css("background-color", "#131313");
     })
+
+    $(".arrow").click(function (e) {
+      e.preventDefault();
+      $("html,body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
+    });
   });
 </script>
 
