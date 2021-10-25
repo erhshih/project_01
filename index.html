@@ -1,190 +1,47 @@
-
 </html>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Bootstrap CSS v5.0.2 -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>關於 | 柴の家</title>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-    * {
-      margin: 0;
-      border: none;
-      box-sizing: border-box;
-      font-family: "Noto Sans TC", sans-serif;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/1e027d45bc.js" crossorigin="anonymous"></script>
 
-    body {      
-      margin: 0 auto;
-    }
 
-    .wrap{
-        width: 1440px;
-        margin: auto;
-        background-color: #f4f5f6;
-    }
-    header {
-      display: flex;
-      height: 110px;
-      border: 2px #000 solid;
-      background-color: #f4f5f6;
-      width: 1440px;
-      margin: 0 auto;
-    }
-    .logo {
-      border: 2px rgb(252, 26, 26) solid;
-      width: 200px;
-      height: 100%;
-    }
-    .logo img {
-      width: 110px;
-      height: 110px;
-      margin-left: 30px;
-    }
+  <title>關於 | 柴の家</title>
+</head>
 
-    .header_text {
-      border: 2px rgb(17, 0, 255) solid;
-      width: 1090px;
-      height: 100%;
-    }
+<body>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
-    .menu {
-      border: 2px rgb(24, 0, 245) solid;
-      width: 150px;
-      height: 100%;
-    }
-
-    .about {
-      border: 2px #000 solid;
-      background-color: #f4f5f6;
-      width: 1440px;
-      height: 280px;
-      margin: 0 auto;
-    }
-
-    .about_top {
-      width: 1440px;
-      height: 164px;
-      border: 2px rgb(24, 0, 245) solid;
-    }
-
-    .about_top .text {
-      font-size: 96px;
-      width: 192px;
-      height: 113px;
-      margin: 0 auto;
-      margin-top: 35px;
-    }
-
-    .about_bottom {
-      width: 1440px;
-      height: 116px;
-      border: 2px rgb(24, 0, 245) solid;
-    }
-
-    .about_bottom .text {
-      width: 192px;
-      height: 53px;
-      display: flex;
-      margin: auto;
-      margin-top: 25px;
-      padding: 0px;
- 
-    }
-    .about_bottom .text p {
-      margin: auto;
-      font-size: 12px;
-    }
-
-    .about_bottom .text p:nth-child(1) {
-      margin-left: 9px;
-    }
-
-    .about_bottom .text p:nth-child(3) {
-      margin-right: 9px;
-    }
-
-    .about_bottom .text p:nth-child(2)::before {
-      content: "";
-      position: relative;
-      right: 25px;
-      height: 12px;
-      border: 1px #000 solid ;
-      background-color: #000;
-    }
-
-    .about_bottom .text p:nth-child(2)::after {
-      content: "";
-      position: relative;
-      left: 25px;
-      height: 12px;
-      border: 1px #000 solid ;
-      background-color: #000;
-    }
-    .carousel{
-        width: 1440px;
-        height: 567px;
-        margin: auto;
-    }
- 
-    .carousel-inner{
-        width: 1440px;
-        height: 567px;
-        margin: auto;
-    
-    }
-    .carousel-control-prev-icon,.carousel-control-next-icon{
-        width: 1440px;
-        margin: auto;
-    }
-
-    .concept{
-
-        display: flex;
-        width: 1440px;
-        height: 505px;
-        margin: auto;
-        margin-top: 100px;
-    }
-
-    .concept .text{
-      position: relative;
-        width: 740px;
-        height: 505px;
-        margin: auto;
-        font-size: 16px;
-        left: 309px;
-        top: 99px;
-    }
-
-    .concept img{
-        width: 700;
-        height: 505;
-    }
-  </style>
-  <body>
-       <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-    <div class="wrap">
+  <div class="wrap">
     <header>
       <div class="logo">
-        <img src="./img/logo_black.png" alt="" />
+        <a href="./index.html"><img src="./img/logo_bbb.svg" alt="" /></a>
       </div>
-      <div class="header_text"></div>
+
       <div class="menu">
-        <button id="menuTrigger"></button>
+        <button id="menu_button">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+
       </div>
     </header>
 
-<!-- 關於 -->
+    <!-- 關於 -->
     <div class="about">
       <div class="about_top">
         <div class="text">關於</div>
@@ -198,57 +55,472 @@
       </div>
     </div>
 
-<!-- 輪播 -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <!-- 輪播 -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/bar.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/bar2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/bar3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/bar.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/bar2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/bar3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <!-- 概念 -->  <!-- sgggdg概念 -->
-  <div class="concept">
+    <!-- 概念 -->
+    <div class="concept">
       <div class="text">
-        <p>柴之家柴之家的概念是<br>
-          “把柴犬發揚光大”
+        <p>柴之家主要的概念是<br>
+          把柴犬發揚光大。
         </p>
-          <p>
-            讓更多的人了解柴犬<br>
-            傻氣可愛的臉。
-          </p>
-         
-          <p> 任何人<br>
-            看到柴犬都會想抱緊。
-          </p>
-         
-          
-          <p>
-            我們將舉辦各式活動<br>
-          與販售各式商品
+
+        <p>
+          讓更多的人了解柴犬<br>
+          傻氣可愛的臉。
+        </p>
+
+        <p> 任何人<br>
+          看到柴犬都會想抱緊。
+        </p>
+
+
+        <p>
+          我們將舉辦各式活動<br>
+          與販售各式商品。
         </p>
       </div>
       <img src="./img/概念.jpg" alt="">
-  </div>
-</div>
-  </body>
+    </div>
+
+    <!-- 標題 -->
+    <div class="head_goal">
+      <div class="text">
+        目的
+      </div>
+      <div class="line">
+
+      </div>
+    </div>
+    <!-- 目的 -->
+    <div class="goal">
+      <div class="goal01">
+
+        <div class="img01">
+          <img src="./img/goal01.jpg" alt="">
+        </div>
+
+        <div class="text01">
+          <div class="topic">
+            <p>
+              目的1
+            </p>
+
+            <h2>
+              了解<br>
+              柴犬的獨特魅力
+            </h2>
+          </div>
+          <div class="content">
+            <p>
+              狗界的表情包<br>
+              忠心、個性勇敢且具有行動力
+            </p>
+
+            <p>
+              柴犬的表情非常多元，而且個性也非常獨特，柴犬非常獨立且愛乾淨，愛乾淨到不只會花很多時間梳理自己，也會幫忙梳理家中其他狗兒的毛，這種天性使牠在大小便的訓練上更加容易。柴犬具有「從不放棄，永不認輸」的態度，面對挑戰從不退縮，當主人遇到危險，柴犬也會向前保護你。
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="goal02">
+        <div class="text02">
+          <div class="topic">
+            <p>
+              目的2
+            </p>
+            <h2>
+              幫助<br>
+              邊緣狗狗找朋友
+            </h2>
+          </div>
+          <div class="content">
+            <p>
+              讓你的柴柴當個社交王
+            </p>
+
+            <p>
+              我們會定期舉辦狗狗聚會，幫助個性彆扭或沒有什麼朋友的狗狗變得更開朗，變得更開朗，很多養狗的人，都喜歡帶著自己的狗狗去參加各種狗狗社交活動，藉此讓狗狗認識更多的同伴。與同類的交流互動，非常有助於自己的狗狗形成良好的社會化性格，讓自己的狗狗與其他狗狗更容易相處。
+            </p>
+
+          </div>
+        </div>
+
+        <div class="img02">
+          <img src="./img/goal02.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- 目的03 -->
+      <div class="goal01">
+
+        <div class="img01">
+          <img src="./img/goal03.jpg" alt="">
+        </div>
+
+        <div class="text01">
+          <div class="topic">
+            <p>
+              目的3
+            </p>
+
+            <h2>
+              找到<br>
+              屬於自己的柴柴周邊
+            </h2>
+          </div>
+          <div class="content">
+            <p>
+              您可以客製化自己的寵物周邊
+            </p>
+
+            <p>
+              我們的周邊商品包含各式各樣的生活用用品，其中有衣服、
+              手機殼、狗碗、口罩、馬克杯等等，不僅如此，也可以用自己家裡柴柴的照片，客製化一個屬於你自己的周邊。
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 背景 -->
+      <div class="head_background">
+        <div class="text">
+          背景
+        </div>
+        <div class="line">
+
+        </div>
+      </div>
+
+      <!-- background -->
+      <div class="background">
+        <div class="topic">
+          喜歡動物<br>
+          到被柴犬迷上的過程
+        </div>
+        <div class="content">
+          從小就很喜歡養小動物的我，特別喜歡狗狗，有次去狗狗公園，看到一群
+          柴犬朝著我衝過來，然後瘋狂對我傻嬌，每個柴犬的臉都計憨厚又可愛，
+          從此我就對柴犬情有獨鍾。
+        </div>
+      </div>
+
+      <!-- teemoline -->
+      <div class="teemo">
+        <div class="teemo_photo">
+          <img src="./img/TEEMO.jpg" alt="">
+        </div>
+        <div class="teemo_daily">
+          <h3>
+            Teemo
+          </h3>
+          <p>
+            上大學之後，我下定決心要養柴犬了，於是去寵物店抱了一隻兩個月大的柴
+            犬回家，取名叫做Teemo，他從小就非常頑皮又好動，我每天去到哪，只要
+            能帶狗狗，我就會帶上Teemo，連睡覺也是一起睡，從此我的生活就更離不
+            開柴犬了。
+          </p>
+          <div class="Line">
+            <div class="text">
+              Line貼圖
+            </div>
+            <a href="https://www.google.com/">
+              <div class="frame">
+                <img src="./img/teemo_Line.jpg" alt="">
+                <p>Teemo可愛貼圖</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- teemo instagrame -->
+      <div class="teemo">
+        <div class="teemo_photo">
+          <img src="./img/teemo_instagram.jpg" alt="">
+        </div>
+        <div class="teemo_daily">
+          <h3>
+            Teemo日常
+          </h3>
+          <p>
+            Teemo居然也有社群帳號!而且粉絲還比牠主人多，社群裡記錄著他的生活
+            趣事，如果有興趣歡迎追蹤起來。
+          </p>
+          <div class="Line">
+            <div class="text">
+              Instagrame帳號
+            </div>
+            <a href="https://www.google.com/">
+              <div class="frame">
+                <img src="./img/instagrame.jpg" alt="">
+                <p>了解更多日常</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer_inner">
+          <div class="arrow">
+            <i class="far fa-arrow-alt-circle-up"></i>
+          </div>
+          <div class="body">
+            <div class="left">
+              <div class="top">
+                <li>最佳</li>
+                <li>柴柴聚會</li>
+                <li>商城</li>
+                <li>幫助</li>
+              </div>
+              <div class="botton">
+                <div class="link">
+                  <li>首頁</li>
+                  <li>活動資訊</li>
+                  <li>周邊</li>
+                  <li>常問問題</li>
+                </div>
+                <div class="store">
+                  <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <div class="text">
+                    購物車
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="right">
+              <div class="top">
+                <h3>柴</h3>
+                <p>の家</p>
+              </div>
+              <div class="botton">
+                ©Copyright by teemo
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Tibame">
+
+          <div class="web">
+            <div class="text">
+              參考網站 :
+            </div>
+
+            <a href="https://www.freepik.com/home">
+              <li>freepik</li>
+            </a>
+            <a href="https://hyogen.design/">
+              <li>hyogen</li>
+            </a>
+            <a href="https://wanpotea.com/">
+              <li>萬波</li>
+            </a>
+            <a href="https://revel.jp/pages/about">
+              <li>revel</li>
+            </a>
+          </div>
+
+          <div class="text01">
+            本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。
+            若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/
+            ">[緯育TibaMe]</a>，後續會由專人協助處理。
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 選單 -->
+      <div class="wrap_menu">
+        <header>
+          <div class="logo">
+            <a href="./index.html"><img src="./img/logo_www.svg" alt="" /></a>
+          </div>
+          <button id="exit_button">
+            <div class="text">
+
+            </div>
+            <div class="text">
+
+            </div>
+          </button>
+
+        </header>
+
+        <div class="wrap_menu_content">
+          <div class="menu_text">
+            <h3>
+              核心
+            </h3>
+            <p>
+              天下柴柴一家親
+            </p>
+            <p>
+              The whole world shiba inus
+              are a family
+            </p>
+          </div>
+
+          <div class="menu_list">
+            <a href="./index.html">
+              <li id="01">
+
+                <div class="line_first">
+
+                </div>
+                <div class="line" id="11">
+
+                </div>
+                <div class="text">
+                  <p>關於</p>
+                  <p>ABOUT</p>
+                </div>
+                <div class="number">
+                  01
+                </div>
+
+              </li>
+            </a>
+            <a href="">
+              <li id="02">
+                <div class="line" id="22">
+
+                </div>
+                <div class="text">
+                  <p>認識柴犬</p>
+                  <p>KNOWLEDGE</p>
+                </div>
+                <div class="number">
+                  02
+                </div>
+              </li>
+            </a>
+            <li id="03">
+              <div class="line" id="33">
+
+              </div>
+              <div class="text">
+                <p>柴柴聚會</p>
+                <p>ACTIVITY</p>
+              </div>
+              <div class="number">
+                03
+              </div>
+            </li>
+            <li id="04">
+              <div class="line" id="44">
+
+              </div>
+              <div class="text">
+                <p>商城</p>
+                <p>STORE</p>
+              </div>
+              <div class="number">
+                04
+              </div>
+            </li>
+            <li id="05">
+              <div class="line" id="55">
+
+              </div>
+              <div class="text">
+                <p>幫助</p>
+                <p>HELP</p>
+              </div>
+              <div class="number">
+                05
+              </div>
+
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#menu_button").click(function () {
+      $(".wrap_menu").slideDown(100);
+    });
+
+    $("#exit_button").click(function () {
+      $(".wrap_menu").hide();
+    });
+
+    // $(".menu_list li").hover(function () {
+    //   $(".menu_list .line").css("background-color", "#fff");
+    // });
+
+    $("#01").hover(function () {
+      $("#11").css("background-color", "#fff").setTimeout(3000);// 滑鼠懸浮時觸發
+    }, function () {
+      $("#11").css("background-color", "#131313").setTimeout(3000);;
+    })
+
+    $("#02").hover(function () {
+      $("#22").css("background-color", "#fff");// 滑鼠懸浮時觸發
+    }, function () {
+      $("#22").css("background-color", "#131313");
+    })
+
+    $("#03").hover(function () {
+      $("#33").css("background-color", "#fff");// 滑鼠懸浮時觸發
+    }, function () {
+      $("#33").css("background-color", "#131313");
+    })
+
+    $("#04").hover(function () {
+      $("#44").css("background-color", "#fff");// 滑鼠懸浮時觸發
+    }, function () {
+      $("#44").css("background-color", "#131313");
+    })
+
+    $("#05").hover(function () {
+      $("#55").css("background-color", "#fff");// 滑鼠懸浮時觸發
+    }, function () {
+      $("#55").css("background-color", "#131313");
+    })
+  });
+</script>
+
 </html>
