@@ -1,0 +1,368 @@
+@import "./help.html";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+* {
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f4f5f6;
+  /* margin-top: -34; */
+  /* border: 2px solid #000; */
+  /* 問老師 */
+}
+
+/* header */
+header {
+  display: flex;
+  height: 58px;
+  /* border: 2px #000 solid; */
+  background-color: transparent;
+  transition: 1s;
+  width: 1440px;
+  margin: 0 auto;
+  z-index: 10;
+  position: fixed;
+  /* top: 7px; */
+  top: -1px;
+}
+
+header:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.logo {
+  /* border: 2px rgb(252, 26, 26) solid; */
+  width: 200px;
+  height: 100%;
+}
+.logo img {
+  width: 55px;
+  height: 55px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.header_text {
+  /* border: 2px rgb(17, 0, 255) solid; */
+  width: 1090px;
+  height: 100%;
+}
+
+/* 選單icon */
+.menu {
+  /* border: tomato 1px solid; */
+  position: relative;
+  top: 12px;
+  left: 1140px;
+  display: flex;
+  width: auto;
+}
+
+#menu_button {
+  width: 45px;
+  height: 32px;
+  background-color: transparent;
+}
+.menu .line:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+}
+
+.menu .line:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+
+.menu .line:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+}
+
+/* 選單頁 */
+.wrap_menu {
+  display: none;
+  width: 1440px;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  /* border: yellow 10px solid; */
+  top: 0;
+  margin: 0 auto;
+  /* 介面 */
+  background-color: #000;
+}
+
+.wrap_menu #exit_button .text:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
+.wrap_menu #exit_button .text:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+#exit_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 100px;
+  left: 1150px;
+  top: 10px;
+  position: relative;
+  background-color: transparent;
+}
+
+.wrap_menu_content {
+  display: flex;
+  margin-left: 0;
+  margin-top: 130px;
+  width: auto;
+}
+
+.menu_text {
+  width: 220px;
+  height: 220px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 530px;
+  margin-left: 80px;
+  /* font-weight: 200px; */
+}
+
+.menu_text h3 {
+  font-weight: 600;
+}
+
+.menu_list {
+  display: flex;
+  list-style: none;
+  margin-left: 140px;
+  gap: 100px;
+}
+
+.menu_list .text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.menu_list .text p:nth-child(1) {
+  font-size: 96px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  /* 問老師 */
+}
+
+.menu_list .text p:nth-child(2) {
+  font-size: 24px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.menu_list li {
+  position: relative;
+  height: 100%;
+}
+.menu_list .number {
+  position: absolute;
+  color: #fff;
+  font-size: 64px;
+  margin-left: -92px;
+  bottom: 0px;
+}
+
+.menu_list .line {
+  /* position: relative; */
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 2px;
+  height: 50em;
+  background-color: #131313;
+}
+
+/* .menu_list .line::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 2px;
+  height: 50em;
+  background-color: rgb(19, 19, 19);
+} */
+
+.line_first {
+  position: relative;
+}
+
+.menu_list a {
+  text-decoration: none;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 786px;
+  background-color: #121212;
+  position: relative;
+}
+
+.arrow {
+  /* border: rgb(255, 0, 0) solid 1px; */
+}
+
+.arrow a {
+  position: relative;
+  top: 40px;
+  left: 1290px;
+}
+.far {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+.footer_inner .body {
+  display: flex;
+  /* border: rgb(98, 0, 255) 1px solid; */
+  margin-top: 80px;
+  position: relative;
+}
+
+.footer_inner .body .left {
+  /* border: springgreen 1px solid; */
+  position: absolute;
+  left: 6%;
+}
+
+.footer_inner .body .left .top {
+  display: flex;
+  gap: 35px;
+}
+
+.footer_inner .body .left .top li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer_inner .body .left .botton .store {
+  display: flex;
+  gap: 15px;
+}
+
+.footer_inner .body .left .botton .link {
+  margin-top: 20px;
+  gap: 45px;
+  display: flex;
+}
+
+.footer_inner .body .left .botton .link li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  color: #acacac;
+}
+
+.footer_inner .body .left .botton .store {
+  margin-top: 100px;
+}
+
+.footer_inner .body .left .botton .store .fas {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.footer_inner .body .left .botton .store .text {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-top: 12px;
+}
+
+.footer_inner .body .right {
+  /* border: rgb(3, 95, 49) 1px solid; */
+  position: absolute;
+  left: 85%;
+}
+
+.footer_inner .body .right .top {
+  color: rgb(255, 255, 255);
+}
+
+.footer_inner .body .right .top h3 {
+  font-size: 98px;
+  margin-left: 20%;
+}
+
+.footer_inner .body .right p {
+  font-size: 48px;
+  margin-top: -25px;
+  margin-left: 20%;
+}
+
+.footer_inner .body .right .botton {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+.Tibame {
+  position: absolute;
+  /* border: 1px solid #acacac; */
+  margin-top: 400px;
+  width: 700px;
+  right: 0px;
+  bottom: 0px;
+  color: rgb(255, 0, 0);
+}
+
+.Tibame .web {
+  display: flex;
+  gap: 15px;
+}
+.Tibame .web li {
+  list-style: none;
+  color: rgb(255, 251, 0);
+}
+.Tibame .web a {
+  text-decoration: none;
+}

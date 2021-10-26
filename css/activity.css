@@ -1,0 +1,336 @@
+@import "./activity.html";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+* {
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f4f5f6;
+  /* margin-top: -34; */
+  border: 2px solid transparent;
+  /* 問老師 */
+}
+
+/* header */
+header {
+  display: flex;
+  height: 58px;
+  /* border: 2px #000 solid; */
+  background-color: transparent;
+  transition: 1s;
+  width: 1440px;
+  margin: 0 auto;
+  z-index: 10;
+  position: fixed;
+  /* top: 7px; */
+  top: -1px;
+}
+
+header:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.logo {
+  /* border: 2px rgb(252, 26, 26) solid; */
+  width: 200px;
+  height: 100%;
+}
+.logo img {
+  width: 55px;
+  height: 55px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.header_text {
+  /* border: 2px rgb(17, 0, 255) solid; */
+  width: 1090px;
+  height: 100%;
+}
+
+/* 選單icon */
+.menu {
+  /* border: tomato 1px solid; */
+  position: relative;
+  top: 12px;
+  left: 1140px;
+  display: flex;
+  width: auto;
+}
+
+#menu_button {
+  width: 45px;
+  height: 32px;
+  background-color: transparent;
+}
+.menu .line:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+}
+
+.menu .line:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+
+.menu .line:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+}
+
+/* 選單頁 */
+.wrap_menu {
+  display: none;
+  width: 1440px;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  /* border: yellow 10px solid; */
+  top: 0;
+  margin: 0 auto;
+  /* 介面 */
+  background-color: #000;
+}
+
+.wrap_menu #exit_button .text:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
+.wrap_menu #exit_button .text:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+#exit_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 100px;
+  left: 1150px;
+  top: 10px;
+  position: relative;
+  background-color: transparent;
+}
+
+.wrap_menu_content {
+  display: flex;
+  margin-left: 0;
+  margin-top: 130px;
+  width: auto;
+}
+
+.menu_text {
+  width: 220px;
+  height: 220px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 530px;
+  margin-left: 80px;
+  /* font-weight: 200px; */
+}
+
+.menu_text h3 {
+  font-weight: 600;
+}
+
+.menu_list {
+  display: flex;
+  list-style: none;
+  margin-left: 140px;
+  gap: 100px;
+}
+
+.menu_list .text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.menu_list .text p:nth-child(1) {
+  font-size: 96px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  /* 問老師 */
+}
+
+.menu_list .text p:nth-child(2) {
+  font-size: 24px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+.menu_list li {
+  position: relative;
+  height: 100%;
+}
+.menu_list .number {
+  position: absolute;
+  color: #fff;
+  font-size: 64px;
+  margin-left: -92px;
+  bottom: 0px;
+}
+
+.menu_list .line {
+  /* position: relative; */
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 2px;
+  height: 50em;
+  background-color: #131313;
+}
+
+/* .menu_list .line::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 2px;
+  height: 50em;
+  background-color: rgb(19, 19, 19);
+} */
+
+.line_first {
+  position: relative;
+}
+
+.menu_list a {
+  text-decoration: none;
+}
+
+/* activity_wrap */
+.activity_wrap {
+  /* border: solid 3px rgb(255, 3, 3); */
+  margin-top: 150px;
+}
+
+.photo_run {
+  overflow: hidden;
+}
+
+.photo_run .img {
+  display: flex;
+  margin-left: -26%;
+  gap: 8px;
+}
+
+.text_bottom {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.text_bottom .text_left .topic {
+  font-size: 64px;
+  margin-left: 170px;
+  margin-top: -5px;
+}
+
+.text_bottom .text_right {
+  font-size: 96px;
+  font-weight: 900;
+  margin-left: 350px;
+  margin-top: -2%;
+  position: relative;
+}
+
+.text_bottom .text_right::after {
+  position: absolute;
+  content: "";
+  top: 118px;
+  left: -810px;
+  width: 790px;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+}
+
+.text_left .number {
+  display: flex;
+  font-size: 12px;
+  margin-top: 20px;
+  gap: 75px;
+  position: relative;
+}
+
+.text_left .number::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 45px;
+  width: 15px;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  transform: rotate(-70deg);
+}
+
+.text_bottom .topic {
+  display: flex;
+  gap: 100px;
+}
+
+.small_bottom {
+  margin-top: 20px;
+  display: flex;
+  font-size: 12px;
+}
+
+.small_bottom .left {
+  margin-left: 169px;
+}
+
+.small_bottom .right {
+  margin-left: 185px;
+  display: flex;
+  gap: 40px;
+}
+
+.fa-long-arrow-alt-left {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.fa-long-arrow-alt-right {
+  margin-top: 2px;
+  font-size: 16px;
+}
