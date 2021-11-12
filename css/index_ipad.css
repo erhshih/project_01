@@ -1,6 +1,6 @@
 @import "./index.html";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 576px) and (max-width: 1199.98px) {
   * {
     margin: 0;
     border: none;
@@ -9,7 +9,7 @@
   }
 
   .wrap {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background-color: #f4f5f6;
@@ -26,7 +26,7 @@
     height: 58px;
     background-color: transparent;
     transition: 1s;
-    width: 100%;
+    /* width: 100%; */
     /* margin: 0 auto; */
     z-index: 10;
     /* top: 7px; */
@@ -37,32 +37,25 @@
   }
   .logo {
     /* border: 2px rgb(252, 26, 26) solid; */
-    width: 200px;
+
     height: 100%;
-    margin-left: 5px;
+    margin-left: -10px;
+    width: 95%;
   }
   .logo img {
-    width: 55px;
     height: 55px;
     margin-left: 30px;
-  }
-
-  .header_text {
-    /* border: 2px rgb(17, 0, 255) solid; */
-    width: 1090px;
-    height: 100%;
   }
 
   /* 選單icon */
 
   #menu_button {
-    width: 45px;
+    width: 5%;
+    min-width: 55px;
     height: 32px;
+    margin-top: 10px;
     background-color: transparent;
     position: relative;
-    margin-left: 80%;
-    margin-top: 15px;
-    margin-right: 1%;
   }
   #menu_button .line:nth-child(1)::after {
     content: "";
@@ -97,7 +90,7 @@
   /* 選單頁 */
   .wrap_menu {
     display: none;
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     height: 100vh;
     position: sticky;
@@ -135,7 +128,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-left: 80%;
+    /* margin-left: 10%; */
     margin-right: 1%;
     margin-top: 10px;
     position: relative;
@@ -146,39 +139,47 @@
     display: flex;
     margin-left: 0;
     margin-top: 5%;
-    width: auto;
+    width: 100%;
   }
 
   .menu_text {
-    width: 220px;
-    height: 220px;
-    color: #fff;
+    width: 20%;
+    color: rgb(61, 61, 61);
     display: flex;
-    flex-direction: column;
-    margin-top: 450px;
-    margin-left: 200px;
+    padding-left: 30px;
+
+    /* flex-direction: column; */
     /* font-weight: 200px; */
   }
-
   .menu_text h3 {
+    font-size: 24px;
     font-weight: 600;
+    writing-mode: vertical-rl;
+  }
+
+  .menu_text p {
+    font-size: 14px;
+    writing-mode: vertical-rl;
   }
 
   .menu_list {
+    width: 80%;
     display: flex;
     list-style: none;
-    margin-left: 4%;
-    gap: 20%;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 40px;
   }
 
   .menu_list .text {
     display: flex;
     flex-direction: column;
     color: #fff;
+    text-align: center;
   }
 
   .menu_list .text p:nth-child(1) {
-    font-size: 76px;
+    font-size: 48px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     line-height: 1;
@@ -198,8 +199,8 @@
   .menu_list .number {
     position: absolute;
     color: #fff;
-    font-size: 40px;
-    margin-left: 2%;
+    font-size: 24px;
+    margin-left: 1%;
     bottom: 6%;
   }
 
@@ -207,7 +208,7 @@
     /* position: relative; */
     position: absolute;
     top: -10px;
-    left: 88px;
+    left: 55px;
     width: 2px;
     height: 50em;
     background-color: rgb(255, 255, 255);
@@ -237,7 +238,7 @@
     background-color: #f4f5f6;
     width: 100%;
     margin: 0 auto;
-    margin-top: 170px;
+    margin-top: 95px;
   }
 
   .about_top {
@@ -247,27 +248,26 @@
   }
 
   .about_top .text {
-    font-size: 96px;
-    width: 192px;
-    height: 113px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 5px;
     margin-top: 35px;
+    letter-spacing: 0.06em;
+    padding-left: 13px;
   }
 
   .about_bottom {
     width: 100%;
-    height: 116px;
     /* border: 2px rgb(24, 0, 245) solid; */
   }
 
   .about_bottom .text {
-    width: 192px;
-    height: 53px;
+    width: 180px;
+
     display: flex;
-    margin: auto;
+    margin: 0 auto;
+    margin-bottom: 35px;
     /* margin-top: 5px; */
-    padding: 0px;
     /* border: 1px solid #000; */
   }
   .about_bottom .text p {
@@ -327,23 +327,23 @@
   /* 標題 */
   .head_goal {
     width: 100%;
-    height: 100px;
     /* border: 1px solid #000; */
-    margin-top: 200px;
+    margin-top: 90px;
     position: relative;
+    margin-bottom: 80px;
   }
 
   .head_goal .text {
-    font-size: 76px;
+    font-size: 64px;
     text-align: center;
   }
 
   .head_goal::after {
     content: "";
-    width: 146px;
+    width: 120px;
     height: 1px;
     position: absolute;
-    top: 115px;
+    top: 95px;
     left: 0px;
     right: 0;
     margin: auto;
@@ -354,21 +354,20 @@
   .concept {
     display: flex;
     width: 100%;
-
     margin: auto;
     margin-top: 100px;
   }
 
   .concept .text {
-    line-height: 40px;
-    width: 55%;
-    padding-left: 20%;
+    line-height: 35px;
+    width: 50%;
+    padding-left: 10%;
     font-size: 16px;
     letter-spacing: 0.3em;
   }
 
   .concept .text p {
-    margin: 35px 0;
+    margin: 18px 0;
   }
 
   .concept .text p:nth-child(1) {
@@ -376,7 +375,7 @@
   }
 
   .concept_img {
-    width: 45%;
+    width: 50%;
     margin-right: 0;
   }
   .concept img {
@@ -396,12 +395,15 @@
     /* height: auto; */
     margin: auto;
     /* border: 1px solid rgb(219, 6, 6); */
-    margin-top: 150px;
+    margin-top: 0px;
   }
-
+  .img01 {
+    width: 50%;
+  }
   .goal01 img {
     max-width: 100%;
     height: anto;
+
     z-index: 1;
   }
   .goal01 .text01 {
@@ -410,12 +412,9 @@
   }
 
   .goal01 .text01 .topic {
-  }
-
-  .goal01 .text01 .topic {
     /* border: 1px solid rgb(0, 255, 76); */
     /* width: 644px; */
-    min-width: 424px;
+    min-width: 300px;
     max-width: 100%;
     position: relative;
     padding-left: 30px;
@@ -428,22 +427,22 @@
   }
 
   .goal01 .text01 .topic h2 {
-    font-size: 60px;
-    min-width: 424px;
+    font-size: 46px;
+    min-width: 300px;
     margin-top: -20px;
   }
 
   .goal01 .text01 .content p:nth-child(1) {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2em;
     font-weight: 600;
-    width: 453px;
+    max-width: 453px;
   }
 
   .goal01 .text01 .content p:nth-child(2) {
-    font-size: 16px;
+    font-size: 14px;
     /* width: 463px; */
-    min-width: 424px;
+    min-width: 350px;
     line-height: 35px;
     margin-top: 35px;
   }
@@ -452,11 +451,11 @@
     /* border: 1px solid rgb(0, 255, 76); */
 
     max-width: 100%;
-    height: 358px;
+    /* height: 358px; */
     padding: 60px 38px 80px 110px;
     z-index: 2;
     position: relative;
-    left: -148px;
+    left: -100px;
     background-color: #f4f5f6;
   }
 
@@ -467,18 +466,31 @@
     /* height: auto; */
     margin: auto;
     /* border: 1px solid rgb(219, 6, 6); */
-    margin-top: 150px;
+    margin-top: 0px;
   }
-
+  .img02 {
+    width: 50%;
+  }
   .goal02 img {
     max-width: 100%;
     height: anto;
+
     z-index: 1;
   }
-
   .goal02 .text02 {
-    width: 60%;
+    width: 50%;
     min-width: 400px;
+  }
+
+  .goal02 .text02 .topic {
+    /* border: 1px solid rgb(0, 255, 76); */
+    /* width: 644px; */
+    min-width: 300px;
+    max-width: 100%;
+    position: relative;
+    padding-left: 30px;
+    left: 0px;
+    background-color: #f4f5f6;
   }
 
   .goal02 .text02 .topic p {
@@ -486,67 +498,57 @@
   }
 
   .goal02 .text02 .topic h2 {
-    font-size: 60px;
+    font-size: 46px;
     min-width: 424px;
     margin-top: -20px;
   }
 
   .goal02 .text02 .content p:nth-child(1) {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
     line-height: 1.2em;
+    font-weight: 600;
     width: 453px;
   }
 
   .goal02 .text02 .content p:nth-child(2) {
-    font-size: 16px;
+    font-size: 14px;
     /* width: 463px; */
-    min-width: 424px;
+    min-width: 350px;
     line-height: 35px;
     margin-top: 35px;
   }
 
   .goal02 .text02 .content {
     /* border: 1px solid rgb(0, 255, 76); */
-    max-width: 100%;
-    height: 358px;
-    padding: 60px 98px 80px 50px;
-    z-index: 2;
-    left: 140px;
-    position: relative;
-    background-color: #f4f5f6;
-  }
 
-  .goal02 .text02 .topic {
-    /* border: 1px solid rgb(0, 255, 76); */
-    min-width: 424px;
     max-width: 100%;
+    /* height: 358px; */
+    padding: 60px 38px 80px 10px;
+    z-index: 2;
     position: relative;
-    padding-left: 100px;
-    left: 0px;
+    left: 100px;
     background-color: #f4f5f6;
   }
 
   /* 背景 */
   .head_background {
     width: 100%;
-    height: 100px;
-    /* border: 1px solid #000; */
-    margin-top: 200px;
+    /* margin-top: 90px; */
     position: relative;
+    margin-bottom: 80px;
   }
 
   .head_background .text {
-    font-size: 76px;
+    font-size: 64px;
     text-align: center;
   }
 
   .head_background::after {
     content: "";
-    width: 146px;
+    width: 120px;
     height: 1px;
     position: absolute;
-    top: 115px;
+    top: 95px;
     left: 0px;
     right: 0px;
     margin: auto;
@@ -554,7 +556,6 @@
   }
 
   .background {
-    margin-top: 100px;
     display: flex;
     width: 100%;
 
@@ -563,16 +564,16 @@
   }
 
   .background .topic {
-    font-size: 48px;
+    font-size: 28px;
     width: 45%;
-
     padding-left: 8%;
     /* position: absolute; */
     line-height: 50px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.08em;
   }
 
   .background .content {
+    font-size: 14px;
     width: 55%;
     padding-right: 2%;
     padding-left: 3%;
@@ -590,30 +591,34 @@
 
   .teemo_photo {
     width: 45%;
-    max-width: 100%;
-    height: auto;
-    padding-left: 15%;
+    padding-left: 20px;
+    padding-right: 0px;
   }
 
   .teemo_daily {
     width: 55%;
-    padding-left: 3%;
+    padding-left: 6%;
+    padding-right: 2%;
   }
 
   .teemo_photo img {
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 
     /* margin-left: 203px; */
   }
 
   .teemo_daily h3 {
-    font-size: 48px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
   }
 
   .teemo_daily p {
     margin-top: 1.4rem;
-    width: 559px;
     line-height: 35px;
+    font-size: 14px;
   }
 
   .teemo_daily .Line {
@@ -625,7 +630,7 @@
 
   .teemo_daily .Line .frame {
     position: relative;
-    width: 559px;
+    max-width: 559px;
     height: 128px;
     border: 1px solid rgb(202, 202, 202);
   }
@@ -645,16 +650,15 @@
     position: absolute;
     top: calc(50% - 42px);
     /* margin-left: 12rem; */
-    padding-left: 42%;
-    letter-spacing: 0.2rem;
+    padding-left: 56%;
+    letter-spacing: 0.1rem;
     color: #121212;
   }
 
   /* footer */
   .footer {
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
-    height: 550px;
     background-color: #121212;
     position: relative;
   }
@@ -672,20 +676,20 @@
     color: rgb(255, 255, 255);
     font-weight: 100;
     padding-left: 90%;
-    margin-top: 70px;
+    margin-top: 30px;
   }
 
   .footer_inner .body {
     display: flex;
     /* border: rgb(98, 0, 255) 1px solid; */
-    margin-top: 80px;
-    position: relative;
+    margin-top: 20px;
+    justify-content: space-between;
   }
 
   .footer_inner .body .left {
     /* border: springgreen 1px solid; */
-    position: absolute;
-    left: 6%;
+    padding-left: 15px;
+    margin-top: 20px;
   }
 
   .footer_inner .body .left .top {
@@ -699,6 +703,11 @@
     font-size: 18px;
   }
 
+  .footer_inner .body .left .botton {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
   .footer_inner .body .left .botton .store {
     display: flex;
     gap: 15px;
@@ -717,10 +726,6 @@
     color: #acacac;
   }
 
-  .footer_inner .body .left .botton .store {
-    margin-top: 100px;
-  }
-
   .footer_inner .body .left .botton .store .fas {
     font-size: 40px;
     color: #ffffff;
@@ -734,8 +739,7 @@
 
   .footer_inner .body .right {
     /* border: rgb(3, 95, 49) 1px solid; */
-    position: absolute;
-    left: 85%;
+    padding-right: 10px;
   }
 
   .footer_inner .body .right .top {
@@ -743,13 +747,13 @@
   }
 
   .footer_inner .body .right .top h3 {
-    font-size: 98px;
+    font-size: 88px;
     margin-left: 20%;
   }
 
   .footer_inner .body .right p {
-    font-size: 48px;
-    margin-top: -25px;
+    font-size: 41px;
+    margin-top: -20px;
     margin-left: 20%;
   }
 
@@ -760,13 +764,12 @@
   }
 
   .Tibame {
-    position: absolute;
     /* border: 1px solid #acacac; */
-    margin-top: 400px;
-    width: 700px;
-    right: 0px;
-    bottom: 0px;
+    margin-top: 40px;
+    width: 100%;
+    padding: 8px;
     color: rgb(255, 0, 0);
+    font-size: 10px;
   }
 
   .Tibame .web {

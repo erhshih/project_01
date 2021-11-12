@@ -1,6 +1,6 @@
 @import "./enter.html";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 575.98px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -12,8 +12,10 @@
   .enter {
     top: -8px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 576px;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    /* 解決vh手機高度無法滿版問題 */
     /* border: 2px solid rgb(240, 0, 0); */
     margin: 0 auto;
     position: relative;
@@ -29,19 +31,23 @@
     position: absolute;
     top: 40px;
     left: 50px;
+    z-index: 4;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
   }
 
   .run_font {
+    display: none;
     position: absolute;
-    top: 0px;
+    width: 3080px;
+    top: 340px;
     left: 0px;
-    bottom: 0;
-    margin: auto;
-    width: 3120px;
-    height: 120px;
     font-size: 90px;
     font-weight: 800;
-    animation: run 38s linear infinite;
+    animation: run 18s linear infinite;
     overflow: hidden;
     letter-spacing: 0.09em;
     z-index: 0;
@@ -60,13 +66,16 @@
   }
 
   .square {
-    margin-top: 4%;
-    margin-left: 53%;
-    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 85%;
     height: 90%;
-    position: relative;
     color: rgb(202, 202, 202);
-    z-index: 2;
+    z-index: 1;
     /* border: 1px solid #333; */
     background: linear-gradient(
       -45deg,
@@ -82,19 +91,31 @@
 
   .button {
     position: absolute;
-    top: 78%;
-    left: 74%;
-    width: 14%;
+    top: 380px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    width: 150px;
     background-color: #000;
     z-index: 3;
+    animation: btncolor 1s infinite;
+    -webkit-animation: btncolor 1s infinite;
   }
-
+  @keyframes btncolor {
+    from {
+      background-color: rgb(0, 0, 0);
+    }
+    to {
+      background-color: rgb(87, 87, 87);
+    }
+  }
   .button .text {
     display: flex;
     justify-content: center;
     color: #fff;
     font-size: 24px;
-    padding: 20px;
+    padding: 15px 0;
   }
 
   .button:hover {
@@ -107,25 +128,37 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    top: 75%;
+    top: 80%;
     left: 7%;
+    z-index: 4;
   }
 
   .font_botttom h3 {
-    font-size: 48px;
-    margin: 0px;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -15px;
+    width: 230px;
+    height: 50px;
   }
 
   .font_botttom p {
-    font-size: 18px;
-    margin: 0px;
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -15px;
+    width: 230px;
+    height: 50px;
   }
 
   .line {
     content: "";
     position: absolute;
-    top: 74%;
-    left: 5%;
+    top: 81%;
+    left: 95%;
     height: 14%;
     width: 2px;
     background-color: rgb(224, 224, 224);
@@ -158,12 +191,17 @@
   .img2,
   .img3,
   .img4 {
-    z-index: 2;
     opacity: 1;
     position: absolute;
-    top: 2%;
-    left: 43%;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
     opacity: 0;
+    z-index: 2;
+
+    width: 330px;
+    height: 400px;
     filter: alpha(opacity=0);
 
     -webkit-animation: round 20s linear infinite;

@@ -2,53 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/enter.css">
-    <title>進入 | 柴の家</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/enter.css">
+  <link rel="stylesheet" href="./css/enter_phone.css">
+  <link rel="stylesheet" href="./css/enter_ipad.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>進入 | 柴の家</title>
 </head>
 
 <body>
+
+  <div class="background">
+
+
     <div class="enter">
 
-        <div class="logo">
-            <a href="./index.html"><img src="./img/logo_bbb.svg" alt="" /></a>
-        </div>
+      <div class="logo">
+        <a href="./index.html"><img src="./img/logo_bbb.svg" alt="" /></a>
+      </div>
 
-        <div class="run_font">
-            天下柴柴一家親 柴柴聚會、周邊<span> </span>天下柴柴一家親 柴柴聚會、周邊
-        </div>
-        <div class="square">
+      <div class="square">
 
-            <a href="./index.html">
-                <div class="button">
-                    <div class="text">
-                        點此進入
-                    </div>
-                </div>
-            </a>
-        </div>
+      </div>
 
+      <div class="button">
+        <a href="./index.html">
+          <div class="text">
+            點此進入
+          </div>
+        </a>
+      </div>
+
+
+      <div class="run_font">
+        &nbsp; &nbsp; &nbsp; &nbsp;柴柴一家親&nbsp;&nbsp;柴柴聚會 &nbsp;&nbsp;周邊&nbsp;&nbsp; 柴柴一家親&nbsp;&nbsp;柴柴聚會 &nbsp;&nbsp;周邊
+      </div>
+
+
+      <div class="enter_img">
         <img class="img1" src="./img/enter_01.png" alt="">
         <img class="img2" src="./img/enter_02.png" alt="">
         <img class="img3" src="./img/enter_03.png" alt="">
         <img class="img4" src="./img/enter_04.png" alt="">
+      </div>
 
-        <div class="line">
-            <div class="line_run">
 
-            </div>
+      <div class="line">
+        <div class="line_run">
+
         </div>
+      </div>
 
-        <div class="font_botttom">
-            <h3>2月柴柴聚會
-            </h3>
-            <p>地點:河濱公園</p>
-        </div>
+      <div class="font_botttom">
+        <h3>2月柴柴聚會
+        </h3>
+        <p>地點:河濱公園</p>
+      </div>
 
     </div>
-
+  </div>
+  <script>
+    //解決vh手機高度無法滿版問題
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
 </body>
 
 </html>

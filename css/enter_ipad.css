@@ -1,6 +1,6 @@
 @import "./enter.html";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 576px) and (max-width: 1199.98px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +11,10 @@
   }
   .enter {
     top: -8px;
-    width: 100%;
-    max-width: 1440px;
+    min-width: 576px;
+    max-width: 1200px;
     height: 100vh;
-    /* border: 2px solid rgb(240, 0, 0); */
+    border: 2px solid rgb(240, 0, 0);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -31,15 +31,21 @@
     left: 50px;
   }
 
+  .logo img {
+    width: 95px;
+    height: 95px;
+  }
+
   .run_font {
     position: absolute;
     top: 0px;
     left: 0px;
     bottom: 0;
     margin: auto;
-    width: 3120px;
-    height: 120px;
-    font-size: 90px;
+    /* margin-top: -32%; */
+    width: 2120px;
+    height: 65px;
+    font-size: 45px;
     font-weight: 800;
     animation: run 38s linear infinite;
     overflow: hidden;
@@ -82,9 +88,9 @@
 
   .button {
     position: absolute;
-    top: 78%;
-    left: 74%;
-    width: 14%;
+    top: 70%;
+    left: 70%;
+    width: 100px;
     background-color: #000;
     z-index: 3;
   }
@@ -95,6 +101,9 @@
     color: #fff;
     font-size: 24px;
     padding: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.4em;
+    padding-left: 25px;
   }
 
   .button:hover {
@@ -107,26 +116,26 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    top: 75%;
-    left: 7%;
+    top: 82%;
+    left: 10%;
   }
 
   .font_botttom h3 {
-    font-size: 48px;
+    font-size: 32px;
     margin: 0px;
   }
 
   .font_botttom p {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0px;
   }
 
   .line {
     content: "";
     position: absolute;
-    top: 74%;
-    left: 5%;
-    height: 14%;
+    top: 83%;
+    left: 6%;
+    height: 10%;
     width: 2px;
     background-color: rgb(224, 224, 224);
     overflow: hidden;
@@ -158,14 +167,19 @@
   .img2,
   .img3,
   .img4 {
+    /* border: 2px solid blue; */
+    width: 385px;
+    height: 467px;
     z-index: 2;
     opacity: 1;
     position: absolute;
-    top: 2%;
-    left: 43%;
+    top: 0;
+    bottom: 0;
+    right: 12%;
+    margin: auto;
     opacity: 0;
     filter: alpha(opacity=0);
-
+    /* min-width: ; */
     -webkit-animation: round 20s linear infinite;
     animation: round 20s linear infinite;
   }
