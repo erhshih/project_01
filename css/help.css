@@ -1,226 +1,218 @@
-@import "./help.html";
+@import "./index.html";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-* {
-  margin: 0;
-  border: none;
-  box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
-}
+@media screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+  }
 
-body {
-  margin: 0 auto;
-}
+  .wrap {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4f5f6;
+    transform: none;
+    /* margin-top: -34; */
+    /* 問老師 */
+  }
 
-.wrap {
-  width: 1440px;
-  margin: 0 auto;
-  background-color: #f4f5f6;
-  /* margin-top: -34; */
-  /* border: 2px solid #000; */
-  /* 問老師 */
-}
+  /* header */
+  header {
+    display: flex;
+    position: sticky;
+    height: 58px;
+    background-color: transparent;
+    transition: 1s;
+    width: 100%;
+    /* margin: 0 auto; */
+    z-index: 10;
+    /* top: 7px; */
+    top: 0px;
+  }
+  header:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .logo {
+    /* border: 2px rgb(252, 26, 26) solid; */
+    width: 200px;
+    height: 100%;
+    margin-left: 5px;
+  }
+  .logo img {
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+  }
 
-/* header */
-header {
-  display: flex;
-  height: 58px;
-  /* border: 2px #000 solid; */
-  background-color: transparent;
-  transition: 1s;
-  width: 1440px;
-  margin: 0 auto;
-  z-index: 10;
-  position: fixed;
-  /* top: 7px; */
-  top: -1px;
-}
+  .header_text {
+    /* border: 2px rgb(17, 0, 255) solid; */
+    width: 1090px;
+    height: 100%;
+  }
 
-header:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.logo {
-  /* border: 2px rgb(252, 26, 26) solid; */
-  width: 200px;
-  height: 100%;
-}
-.logo img {
-  width: 55px;
-  height: 55px;
-  margin-left: 30px;
-  margin-top: 5px;
-}
+  /* 選單icon */
 
-.header_text {
-  /* border: 2px rgb(17, 0, 255) solid; */
-  width: 1090px;
-  height: 100%;
-}
+  #menu_button {
+    width: 45px;
+    height: 32px;
+    background-color: transparent;
+    position: relative;
+    margin-left: 80%;
+    margin-top: 15px;
+    margin-right: 1%;
+  }
+  #menu_button .line:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
 
-/* 選單icon */
-.menu {
-  /* border: tomato 1px solid; */
-  position: relative;
-  top: 12px;
-  left: 1140px;
-  display: flex;
-  width: auto;
-}
+  #menu_button .line:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
 
-#menu_button {
-  width: 45px;
-  height: 32px;
-  background-color: transparent;
-}
-.menu .line:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 35px;
-  height: 3px;
-  background-color: #000;
-}
+  #menu_button .line:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
 
-.menu .line:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  width: 35px;
-  height: 3px;
-  background-color: rgb(0, 0, 0);
-}
+  /* 選單頁 */
+  .wrap_menu {
+    display: none;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    /* border: yellow 10px solid; */
+    margin: 0 auto;
+    /* 介面 */
+    background-color: #000;
+  }
 
-.menu .line:nth-child(3)::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 5px;
-  width: 35px;
-  height: 3px;
-  background-color: #000;
-}
+  .wrap_menu #exit_button .text:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+  }
 
-/* 選單頁 */
-.wrap_menu {
-  display: none;
-  width: 1440px;
-  height: 100vh;
-  position: fixed;
-  z-index: 20;
-  /* border: yellow 10px solid; */
-  top: 0;
-  margin: 0 auto;
-  /* 介面 */
-  background-color: #000;
-}
+  .wrap_menu #exit_button .text:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+  }
 
-.wrap_menu #exit_button .text:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  width: 30px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transform: rotate(-45deg);
-}
+  #exit_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 80%;
+    margin-right: 1%;
+    margin-top: 10px;
+    position: relative;
+    background-color: transparent;
+  }
 
-.wrap_menu #exit_button .text:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  width: 30px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transform: rotate(45deg);
-}
+  .wrap_menu_content {
+    display: flex;
+    margin-left: 0;
+    margin-top: 5%;
+    width: auto;
+  }
 
-#exit_button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  right: 100px;
-  left: 1150px;
-  top: 10px;
-  position: relative;
-  background-color: transparent;
-}
+  .menu_text {
+    width: 220px;
+    height: 220px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 450px;
+    margin-left: 200px;
+    /* font-weight: 200px; */
+  }
 
-.wrap_menu_content {
-  display: flex;
-  margin-left: 0;
-  margin-top: 130px;
-  width: auto;
-}
+  .menu_text h3 {
+    font-weight: 600;
+  }
 
-.menu_text {
-  width: 220px;
-  height: 220px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  margin-top: 530px;
-  margin-left: 80px;
-  /* font-weight: 200px; */
-}
+  .menu_list {
+    display: flex;
+    list-style: none;
+    margin-left: 4%;
+    gap: 20%;
+  }
 
-.menu_text h3 {
-  font-weight: 600;
-}
+  .menu_list .text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
 
-.menu_list {
-  display: flex;
-  list-style: none;
-  margin-left: 140px;
-  gap: 100px;
-}
+  .menu_list .text p:nth-child(1) {
+    font-size: 76px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    /* 問老師 */
+  }
 
-.menu_list .text {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-}
+  .menu_list .text p:nth-child(2) {
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .menu_list li {
+    position: relative;
+  }
+  .menu_list .number {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    margin-left: 2%;
+    bottom: 6%;
+  }
 
-.menu_list .text p:nth-child(1) {
-  font-size: 96px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  line-height: 1;
-  letter-spacing: 0.15em;
-  font-weight: 800;
-  /* 問老師 */
-}
+  .menu_list .line {
+    /* position: relative; */
+    position: absolute;
+    top: -10px;
+    left: 88px;
+    width: 2px;
+    height: 50em;
+    background-color: rgb(255, 255, 255);
+  }
 
-.menu_list .text p:nth-child(2) {
-  font-size: 24px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-.menu_list li {
-  position: relative;
-  height: 100%;
-}
-.menu_list .number {
-  position: absolute;
-  color: #fff;
-  font-size: 64px;
-  margin-left: -92px;
-  bottom: 0px;
-}
-
-.menu_list .line {
-  /* position: relative; */
-  position: absolute;
-  top: -10px;
-  left: 100px;
-  width: 2px;
-  height: 50em;
-  background-color: #131313;
-}
-
-/* .menu_list .line::after {
+  /* .menu_list .line::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -230,139 +222,208 @@ header:hover {
   background-color: rgb(19, 19, 19);
 } */
 
-.line_first {
-  position: relative;
-}
+  .line_first {
+    position: relative;
+  }
 
-.menu_list a {
-  text-decoration: none;
-}
+  .menu_list a {
+    text-decoration: none;
+  }
 
-/* footer */
-.footer {
-  width: 100%;
-  height: 786px;
-  background-color: #121212;
-  position: relative;
-}
+  /* ===============================footer=================== */
+  .footer {
+    margin-top: 200px;
+    width: 100%;
+    height: 550px;
+    background-color: #121212;
+    position: relative;
+  }
+  .arrow {
+    display: block;
+    width: 0px;
+    margin-left: 90%;
+  }
 
-.arrow {
-  /* border: rgb(255, 0, 0) solid 1px; */
-}
+  .far {
+    /* margin-top: 7%;
+  margin-left: 90%; */
 
-.arrow a {
-  position: relative;
-  top: 40px;
-  left: 1290px;
-}
-.far {
-  font-size: 50px;
-  color: rgb(255, 255, 255);
-  font-weight: 100;
-}
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-left: 90%;
+    margin-top: 70px;
+  }
 
-.footer_inner .body {
-  display: flex;
-  /* border: rgb(98, 0, 255) 1px solid; */
-  margin-top: 80px;
-  position: relative;
-}
+  .footer_inner .body {
+    display: flex;
+    /* border: rgb(98, 0, 255) 1px solid; */
+    margin-top: 80px;
+    position: relative;
+  }
 
-.footer_inner .body .left {
-  /* border: springgreen 1px solid; */
-  position: absolute;
-  left: 6%;
-}
+  .footer_inner .body .left {
+    /* border: springgreen 1px solid; */
+    position: absolute;
+    left: 6%;
+  }
 
-.footer_inner .body .left .top {
-  display: flex;
-  gap: 35px;
-}
+  .footer_inner .body .left .top {
+    display: flex;
+    gap: 35px;
+  }
 
-.footer_inner .body .left .top li {
-  list-style: none;
-  color: #ffffff;
-  font-size: 18px;
-}
+  .footer_inner .body .left .top li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 18px;
+  }
 
-.footer_inner .body .left .botton .store {
-  display: flex;
-  gap: 15px;
-}
+  .footer_inner .body .left .botton .store {
+    display: flex;
+    gap: 15px;
+  }
 
-.footer_inner .body .left .botton .link {
-  margin-top: 20px;
-  gap: 45px;
-  display: flex;
-}
+  .footer_inner .body .left .botton .link {
+    margin-top: 20px;
+    gap: 45px;
+    display: flex;
+  }
 
-.footer_inner .body .left .botton .link li {
-  text-decoration: none;
-  list-style: none;
-  font-size: 14px;
-  color: #acacac;
-}
+  .footer_inner .body .left .botton .link li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: #acacac;
+  }
 
-.footer_inner .body .left .botton .store {
-  margin-top: 100px;
-}
+  .footer_inner .body .left .botton .store {
+    margin-top: 100px;
+  }
 
-.footer_inner .body .left .botton .store .fas {
-  font-size: 40px;
-  color: #ffffff;
-}
+  .footer_inner .body .left .botton .store .fas {
+    font-size: 40px;
+    color: #ffffff;
+  }
 
-.footer_inner .body .left .botton .store .text {
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  margin-top: 12px;
-}
+  .footer_inner .body .left .botton .store .text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+  }
 
-.footer_inner .body .right {
-  /* border: rgb(3, 95, 49) 1px solid; */
-  position: absolute;
-  left: 85%;
-}
+  .footer_inner .body .right {
+    /* border: rgb(3, 95, 49) 1px solid; */
+    position: absolute;
+    left: 85%;
+  }
 
-.footer_inner .body .right .top {
-  color: rgb(255, 255, 255);
-}
+  .footer_inner .body .right .top {
+    color: rgb(255, 255, 255);
+  }
 
-.footer_inner .body .right .top h3 {
-  font-size: 98px;
-  margin-left: 20%;
-}
+  .footer_inner .body .right .top h3 {
+    font-size: 98px;
+    margin-left: 20%;
+  }
 
-.footer_inner .body .right p {
-  font-size: 48px;
-  margin-top: -25px;
-  margin-left: 20%;
-}
+  .footer_inner .body .right p {
+    font-size: 48px;
+    margin-top: -25px;
+    margin-left: 20%;
+  }
 
-.footer_inner .body .right .botton {
-  font-size: 12px;
-  color: rgb(255, 255, 255);
-  margin-left: 10px;
-}
+  .footer_inner .body .right .botton {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+  }
 
-.Tibame {
-  position: absolute;
-  /* border: 1px solid #acacac; */
-  margin-top: 400px;
-  width: 700px;
-  right: 0px;
-  bottom: 0px;
-  color: rgb(255, 0, 0);
-}
+  .Tibame {
+    position: absolute;
+    /* border: 1px solid #acacac; */
+    margin-top: 400px;
+    width: 700px;
+    right: 0px;
+    bottom: 0px;
+    color: rgb(255, 0, 0);
+  }
 
-.Tibame .web {
-  display: flex;
-  gap: 15px;
-}
-.Tibame .web li {
-  list-style: none;
-  color: rgb(255, 251, 0);
-}
-.Tibame .web a {
-  text-decoration: none;
+  .Tibame .web {
+    display: flex;
+    gap: 15px;
+  }
+  .Tibame .web li {
+    list-style: none;
+    color: rgb(255, 251, 0);
+  }
+  .Tibame .web a {
+    text-decoration: none;
+  }
+
+  /* =======================help_wrap======================= */
+  /* Style the buttons that are used to open and close the accordion panel */
+  .help_wrap {
+    padding: 0 6vw;
+    padding-top: min(6vw, 200px);
+  }
+
+  .help_wrap p {
+    padding-top: 5vw;
+    padding-bottom: 0.61vw;
+  }
+  .help_wrap .top h2 {
+    font-size: min(3.5vw, 50px);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.3vw;
+  }
+
+  .help_wrap .top .p {
+    font-size: min(20px);
+    letter-spacing: 0.04em;
+  }
+
+  .help_wrap .middle {
+    padding-top: 6.5vw;
+    padding-bottom: 0.3vw;
+    display: flex;
+    gap: 2vw;
+  }
+
+  .help_wrap .middle .content {
+    border-bottom: 1px solid #000;
+    width: 18vw;
+    height: 2.2em;
+  }
+
+  .accordion {
+    background-color: #f4f5f6;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.6s;
+    margin: 0.4vw 0;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: rgb(226, 226, 226);
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -0.4vw;
+    line-height: 4em;
+  }
 }

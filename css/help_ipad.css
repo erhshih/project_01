@@ -1,0 +1,430 @@
+@import "./index.html";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@media screen and (min-width: 576px) and (max-width: 1199.98px) {
+  * {
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+
+  .wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f4f5f6;
+    transform: none;
+    /* margin-top: -34; */
+    /* border: 1px solid red; */
+    /* 問老師 */
+  }
+
+  /* header */
+  header {
+    display: flex;
+    position: sticky;
+    height: 58px;
+    background-color: transparent;
+    transition: 1s;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    z-index: 10;
+    /* top: 7px; */
+    top: 0px;
+  }
+  header:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .logo {
+    /* border: 2px rgb(252, 26, 26) solid; */
+
+    height: 100%;
+    margin-left: -10px;
+    width: 95%;
+  }
+  .logo img {
+    height: 55px;
+    margin-left: 30px;
+  }
+
+  /* 選單icon */
+
+  #menu_button {
+    width: 5%;
+    min-width: 55px;
+    height: 32px;
+    margin-top: 10px;
+    background-color: transparent;
+    position: relative;
+  }
+  #menu_button .line:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  #menu_button .line:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  #menu_button .line:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  /* 選單頁 */
+  .wrap_menu {
+    display: none;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    /* border: yellow 10px solid; */
+    margin: 0 auto;
+    /* 介面 */
+    background-color: #000;
+  }
+
+  .wrap_menu #exit_button .text:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+  }
+
+  .wrap_menu #exit_button .text:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+  }
+
+  #exit_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* margin-left: 10%; */
+    margin-right: 1%;
+    margin-top: 10px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .wrap_menu_content {
+    display: flex;
+    margin-left: 0;
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  .menu_text {
+    width: 20%;
+    color: rgb(61, 61, 61);
+    display: flex;
+    padding-left: 30px;
+
+    /* flex-direction: column; */
+    /* font-weight: 200px; */
+  }
+  .menu_text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+  }
+
+  .menu_text p {
+    font-size: 14px;
+    writing-mode: vertical-rl;
+  }
+
+  .menu_list {
+    width: 80%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 40px;
+  }
+
+  .menu_list .text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+  }
+
+  .menu_list .text p:nth-child(1) {
+    font-size: 48px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    /* 問老師 */
+  }
+
+  .menu_list .text p:nth-child(2) {
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .menu_list li {
+    position: relative;
+  }
+  .menu_list .number {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 1%;
+    bottom: 6%;
+  }
+
+  .menu_list .line {
+    /* position: relative; */
+    position: absolute;
+    top: -10px;
+    left: 55px;
+    width: 2px;
+    height: 50em;
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* .menu_list .line::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  width: 2px;
+  height: 50em;
+  background-color: rgb(19, 19, 19);
+} */
+
+  .line_first {
+    position: relative;
+  }
+
+  .menu_list a {
+    text-decoration: none;
+  }
+
+  /* ========================footer =================== */
+  .footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #121212;
+    position: relative;
+  }
+  .arrow {
+    display: block;
+    width: 0px;
+    margin-left: 90%;
+  }
+
+  .far {
+    /* margin-top: 7%;
+  margin-left: 90%; */
+
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-left: 90%;
+    margin-top: 30px;
+  }
+
+  .footer_inner .body {
+    display: flex;
+    /* border: rgb(98, 0, 255) 1px solid; */
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .footer_inner .body .left {
+    /* border: springgreen 1px solid; */
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+
+  .footer_inner .body .left .top {
+    display: flex;
+    gap: 35px;
+  }
+
+  .footer_inner .body .left .top li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 18px;
+  }
+
+  .footer_inner .body .left .botton {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer_inner .body .left .botton .store {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer_inner .body .left .botton .link {
+    margin-top: 20px;
+    gap: 45px;
+    display: flex;
+  }
+
+  .footer_inner .body .left .botton .link li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: #acacac;
+  }
+
+  .footer_inner .body .left .botton .store .fas {
+    font-size: 40px;
+    color: #ffffff;
+  }
+
+  .footer_inner .body .left .botton .store .text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+  }
+
+  .footer_inner .body .right {
+    /* border: rgb(3, 95, 49) 1px solid; */
+    padding-right: 10px;
+  }
+
+  .footer_inner .body .right .top {
+    color: rgb(255, 255, 255);
+  }
+
+  .footer_inner .body .right .top h3 {
+    font-size: 88px;
+    margin-left: 20%;
+  }
+
+  .footer_inner .body .right p {
+    font-size: 41px;
+    margin-top: -20px;
+    margin-left: 20%;
+  }
+
+  .footer_inner .body .right .botton {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+  }
+
+  .Tibame {
+    /* border: 1px solid #acacac; */
+    margin-top: 40px;
+    width: 100%;
+    padding: 8px;
+    color: rgb(255, 0, 0);
+    font-size: 10px;
+  }
+
+  .Tibame .web {
+    display: flex;
+    gap: 15px;
+  }
+  .Tibame .web li {
+    list-style: none;
+    color: rgb(255, 251, 0);
+  }
+  .Tibame .web a {
+    text-decoration: none;
+  }
+
+  /* =======================help_wrap======================= */
+  /* Style the buttons that are used to open and close the accordion panel */
+  .help_wrap {
+    padding: 0 6vw;
+    padding-top: min(6vw, 200px);
+  }
+
+  .help_wrap p {
+    padding-top: 5vw;
+    padding-bottom: 0.61vw;
+  }
+  .help_wrap .top h2 {
+    font-size: min(5.2vw, 50px);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.3vw;
+  }
+
+  .help_wrap .top .p {
+    font-size: min(2.5vw);
+    letter-spacing: 0.04em;
+  }
+
+  .help_wrap .middle {
+    padding-top: 6.5vw;
+    padding-bottom: 0.3vw;
+    display: flex;
+    gap: 4vw;
+  }
+
+  .help_wrap .middle .content {
+    border-bottom: 1px solid #000;
+    width: 24vw;
+    height: 2.2em;
+    font-size: 2vw;
+  }
+
+  .accordion {
+    background-color: #f4f5f6;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.6s;
+    margin: 0.4vw 0;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .accordion:hover {
+    background-color: rgb(226, 226, 226);
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: -0.4vw;
+    line-height: 2.5em;
+  }
+}

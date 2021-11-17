@@ -7,6 +7,17 @@
     box-sizing: border-box;
     font-family: "Noto Sans TC", sans-serif;
   }
+  /* html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  } */
+  /* body {
+
+    padding-right: 15px; /* Avoid width reflow 
+  } */
 
   .wrap {
     max-width: 576px;
@@ -15,7 +26,7 @@
     background-color: #f4f5f6;
     transform: none;
     /* margin-top: -34; */
-    /* border: 2px solid red; */
+    /* border: 1px solid red; */
     /* 問老師 */
   }
 
@@ -30,6 +41,7 @@
     /* margin: 0 auto; */
     z-index: 10;
     /* top: 7px; */
+    /* border: 1px solid rgb(0, 47, 255); */
     top: 0px;
   }
   /* header:hover {
@@ -55,13 +67,18 @@
     background-color: transparent;
     position: relative;
     margin-top: 10px;
-    margin-right: 2%;
+    margin-right: 10px;
+    /* border: 1px solid rgb(255, 0, 191); */
   }
+
+  #menu_button .line {
+  }
+
   #menu_button .line:nth-child(1)::after {
     content: "";
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 0px;
     width: 25px;
     height: 3px;
     background-color: #000;
@@ -71,7 +88,7 @@
     content: "";
     position: absolute;
     top: 15px;
-    left: 5px;
+    left: 0px;
     width: 25px;
     height: 3px;
     background-color: #000;
@@ -81,7 +98,7 @@
     content: "";
     position: absolute;
     top: 25px;
-    left: 5px;
+    left: 0px;
     width: 25px;
     height: 3px;
     background-color: #000;
@@ -175,6 +192,7 @@
     display: flex;
     flex-direction: column;
     color: #fff;
+    align-items: flex-end;
   }
 
   .menu_list .text p:nth-child(1) {
@@ -214,9 +232,11 @@
     left: 0px;
     width: 95%;
     height: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #131313;
   }
-
+  .menu_list #line {
+    background-color: #ffffff;
+  }
   /* .menu_list .line::after {
   content: "";
   position: absolute;
@@ -400,6 +420,7 @@
 
   .goal {
     /* width: 100%; */
+    overflow: hidden;
   }
 
   .goal01 {
@@ -633,7 +654,7 @@
 
   .teemo_daily .Line .frame {
     position: relative;
-    max-width: 559px;
+    max-width: 95%;
     height: 70px;
     border: 1px solid rgb(202, 202, 202);
   }
@@ -645,7 +666,7 @@
 
   .teemo_daily .Line .frame img {
     position: absolute;
-    top: calc(50% - 25px);
+    top: calc(50% - 24px);
     margin-left: 0.6rem;
     width: 35%;
   }
@@ -655,8 +676,8 @@
     top: calc(50% - 36px);
     /* margin-left: 12rem; */
     font-size: 10px;
-    padding-left: 44%;
-    letter-spacing: 0.08rem;
+    padding-left: 42%;
+    letter-spacing: 0.07rem;
     color: #121212;
   }
 
