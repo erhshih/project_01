@@ -530,6 +530,7 @@
     align-items: center;
     width: 30%;
     margin-top: 3em;
+    text-decoration: none;
   }
   .benefit_wrap .right button {
     width: 100%;
