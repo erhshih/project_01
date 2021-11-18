@@ -515,7 +515,275 @@
 
   .font_bottom p:nth-child(2) {
   }
+  /* =======================color_wrap===================== */
 
+  .color_wrap {
+    padding: 80px;
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 800px; */
+    margin: 60px auto 0px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .color_wrap .left {
+    position: relative;
+    /* border: 1px solid rgb(3, 104, 255); */
+    padding-bottom: 115%;
+    margin-left: -29%;
+    width: 100%;
+  }
+  .color_wrap .left .back {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #ddd;
+    top: 5%;
+    left: auto;
+    right: -58%;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .color_wrap .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .color_wrap .left .photo img {
+    /* position: absolute;
+  top: 0;
+  left: 0; */
+    max-width: 100%;
+  }
+  .color_wrap .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .color_wrap .right {
+    /* position: absolute;
+    top: 25%;
+    right: auto;
+    left: 48%;
+    width: 50%;
+    padding: 5%;
+    height: 20em; */
+    width: 80vw;
+    line-height: 2.5em;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.6s;
+    margin-top: 3vw;
+    padding: 5%;
+    margin-left: -11.5vw;
+  }
+
+  .color_wrap .right:hover {
+    transform: translateY(-5%);
+  }
+
+  .color_wrap2 {
+    padding: 80px;
+    padding-top: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 800px; */
+    margin: 0px auto 0px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .color_wrap2 .left {
+    position: relative;
+    /* border: 1px solid rgb(3, 104, 255); */
+    padding-bottom: 115%;
+    margin-left: 29%;
+    /* -29 */
+    width: 100%;
+  }
+  .color_wrap2 .left .back {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #ddd;
+    top: 5%;
+    left: auto;
+    right: 58%;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .color_wrap2 .left .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .color_wrap2 .left .photo img {
+    /* position: absolute;
+  top: 0;
+  left: 0; */
+    /* right: 0; */
+    max-width: 100%;
+  }
+  .color_wrap2 .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .color_wrap2 .right {
+    width: 80vw;
+    line-height: 2.5em;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.6s;
+    margin-top: 3vw;
+    padding: 5%;
+    margin-left: -11.5vw;
+  }
+
+  .color_wrap2 .right:hover {
+    transform: translateY(-5%);
+  }
+  .color_wrap3 {
+    padding: 80px;
+    padding-top: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 800px; */
+    margin: 0px auto 0px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .color_wrap3 .left {
+    position: relative;
+    /* border: 1px solid rgb(3, 104, 255); */
+    padding-bottom: 115%;
+    margin-left: -29%;
+    width: 100%;
+  }
+  .color_wrap3 .left .back {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #ddd;
+    top: 5%;
+    left: auto;
+    right: -58%;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .color_wrap3 .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .color_wrap3 .left .photo img {
+    /* position: absolute;
+  top: 0;
+  left: 0; */
+    max-width: 100%;
+  }
+  .color_wrap3 .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .color_wrap3 .right {
+    /* position: absolute;
+    top: 25%;
+    right: auto;
+    left: 48%;
+    width: 50%;
+    padding: 5%;
+    height: 20em; */
+    width: 80vw;
+    line-height: 2.5em;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.6s;
+    margin-top: 3vw;
+    padding: 5%;
+    margin-left: -11.5vw;
+  }
+
+  .color_wrap3 .right:hover {
+    transform: translateY(-5%);
+  }
+
+  .color_wrap4 {
+    padding: 80px;
+    padding-top: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 800px; */
+    margin: 0px auto 0px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .color_wrap4 .left {
+    position: relative;
+    /* border: 1px solid rgb(3, 104, 255); */
+    padding-bottom: 115%;
+    margin-left: 29%;
+    /* -29 */
+    width: 100%;
+  }
+  .color_wrap4 .left .back {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #ddd;
+    top: 5%;
+    left: auto;
+    right: 58%;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .color_wrap4 .left .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .color_wrap4 .left .photo img {
+    /* position: absolute;
+  top: 0;
+  left: 0; */
+    /* right: 0; */
+    max-width: 100%;
+  }
+  .color_wrap4 .left .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .color_wrap4 .right {
+    width: 80vw;
+    line-height: 2.5em;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: 0.6s;
+    margin-top: 3vw;
+    padding: 5%;
+    margin-left: -11.5vw;
+  }
+
+  .color_wrap4 .right:hover {
+    transform: translateY(-5%);
+  }
   /* ================shiba_wrap================= */
   .shiba_fixed {
     width: 100%;

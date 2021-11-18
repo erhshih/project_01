@@ -232,9 +232,11 @@
     left: 0px;
     width: 95%;
     height: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #131313;
   }
-
+  .menu_list #line {
+    background-color: #ffffff;
+  }
   /* .menu_list .line::after {
   content: "";
   position: absolute;
@@ -437,9 +439,9 @@
     /* border: 1px solid rgb(0, 255, 13); */
   }
 
-  .register_top:hover .circle {
+  /* .register_top:hover .circle {
     animation: myfirst 2s linear infinite;
-  }
+  } */
 
   .register_top .photo img {
     width: 100%;
@@ -455,6 +457,7 @@
     border: 3px rgb(252, 252, 252) solid;
     top: 80%;
     left: 80%;
+    animation: myfirst 2s linear infinite;
   }
 
   @keyframes myfirst {

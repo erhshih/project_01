@@ -211,17 +211,19 @@
     left: 55px;
     width: 2px;
     height: 50em;
-    background-color: rgb(255, 255, 255);
+    background-color: #131313;
   }
-
+  .menu_list #line {
+    background-color: #ffffff;
+  }
   /* .menu_list .line::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 100px;
-  width: 2px;
-  height: 50em;
-  background-color: rgb(19, 19, 19);
+content: "";
+position: absolute;
+top: -10px;
+left: 100px;
+width: 2px;
+height: 50em;
+background-color: rgb(19, 19, 19);
 } */
 
   .line_first {

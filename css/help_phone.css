@@ -232,9 +232,11 @@
     left: 0px;
     width: 95%;
     height: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: #131313;
   }
-
+  .menu_list #line {
+    background-color: #ffffff;
+  }
   /* .menu_list .line::after {
   content: "";
   position: absolute;

@@ -144,19 +144,21 @@
 
   .wrap_menu_content {
     display: flex;
-    margin-left: 0;
-    margin-top: 5%;
+    /* align-items: center; */
+    padding-top: 4em;
+    justify-content: space-around;
     width: auto;
+    height: 100vh;
   }
 
   .menu_text {
     width: 220px;
     height: 220px;
-    color: #fff;
+    color: rgb(61, 61, 61);
     display: flex;
     flex-direction: column;
-    margin-top: 450px;
-    margin-left: 200px;
+    margin-top: 0px;
+    /* margin-left: 200px; */
     /* font-weight: 200px; */
   }
 
@@ -167,18 +169,23 @@
   .menu_list {
     display: flex;
     list-style: none;
-    margin-left: 4%;
-    gap: 20%;
+    justify-content: space-around;
+    /* margin-left: 4%; */
+    /* gap: 20%; */
   }
 
   .menu_list .text {
     display: flex;
     flex-direction: column;
     color: #fff;
+    height: 80vh;
   }
 
+  .menu_list a {
+    padding: 0 40px;
+  }
   .menu_list .text p:nth-child(1) {
-    font-size: 76px;
+    font-size: min(5vw, 76px);
     writing-mode: vertical-rl;
     text-orientation: mixed;
     line-height: 1;
@@ -210,9 +217,11 @@
     left: 88px;
     width: 2px;
     height: 50em;
-    background-color: rgb(255, 255, 255);
+    background-color: #131313;
   }
-
+  .menu_list #line {
+    background-color: #ffffff;
+  }
   /* .menu_list .line::after {
   content: "";
   position: absolute;
@@ -379,7 +388,7 @@
   }
 
   .invite_wrap .left .top {
-    font-size: 2.2vw;
+    font-size: 4.5vw;
   }
   .invite_wrap .left .bottom {
     margin-top: 32%;
