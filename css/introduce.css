@@ -495,7 +495,54 @@
 
   .font_bottom p:nth-child(2) {
   }
+  /* =================benefit_wrap=============== */
+  .benefit_wrap {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 0;
+    padding: 100px 0;
+  }
 
+  .shsh {
+    position: absolute;
+    font-size: 12vw;
+    bottom: 100px;
+    -webkit-text-stroke: 5px rgb(255, 255, 255);
+    color: #fff;
+    letter-spacing: 0.4em;
+  }
+  .benefit_wrap .left {
+    width: 30%;
+    padding: 10% 2%;
+  }
+
+  .benefit_wrap .left h1 {
+    color: #fff;
+    padding-bottom: 0.5em;
+  }
+  .benefit_wrap .left p {
+    color: rgb(124, 124, 124);
+  }
+
+  .benefit_wrap .photo {
+    width: 36%;
+  }
+  .benefit_wrap .photo img {
+    max-width: 100%;
+  }
+
+  .benefit_wrap .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  .benefit_wrap .right button {
+    width: 54%;
+    height: 10%;
+  }
   /* =======================color_wrap===================== */
 
   .color_wrap {
